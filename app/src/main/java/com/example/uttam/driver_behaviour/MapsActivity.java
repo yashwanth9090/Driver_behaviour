@@ -151,8 +151,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Float newPitchOut = 0f;
     Float newRollOut = 0f;
     Float newYawOut = 0f;
-    //    int underX = 0;
-//    int underY = 0;
+    
     Float newPitchOutQ = 0f;
     Float newRollOutQ = 0f;
     Float newYawOutQ = 0f;
@@ -431,6 +430,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void onadd() {
+        // all the attributes are added to list
         details.add("Total Time: " + timeString);
         details.add("Max Speed: " + sMaxSpeed);
         details.add("LimitExceedTime: " + limitExceedTime);
