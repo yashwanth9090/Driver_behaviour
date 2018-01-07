@@ -242,24 +242,7 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
         Intent intent = new Intent(MainActivity.this,ViewDatabase.class);
         intent.putExtra("userid",Name);
         startActivity(intent);
-        /*Cursor result = db.display();
-        if (result.getCount()==0)
-        {
-            show("Data","Empty Table");
-        }
-        else
-        {
-            StringBuffer sb = new StringBuffer();
-            while (result.moveToNext())
-            {
-                sb.append("ID : "+result.getString(0)+"\n"+
-                        "TotalTime : "+result.getString(1)+"\n"+
-                        "LimitExceedCount : "+result.getString(2)+"\n"+
-                        "OverspeedTime :"+result.getString(3)+"\n"+
-                        "MaxSpeed :"+result.getString(4)+"\n\n");
-            }
-            show("Data",sb.toString());
-        }*/
+        
     }
 
     private void show(String s, String s1) {
@@ -269,11 +252,6 @@ public class MainActivity extends Activity implements SensorEventListener, Locat
         b.setMessage(s1);
         b.show();
     }
- /*   public void del(View v) {
-        EditText e = (EditText)findViewById(R.id.editText);
-        String s = e.getText().toString();
-        db.delete(s);
-    }*/
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
