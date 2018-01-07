@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 /**
- * Created by Uttam on 11/14/17.
+ * Created by Yashwanth on 11/14/17.
  */
 
 public class UserLoginPage extends AppCompatActivity implements  View.OnClickListener{
@@ -73,9 +73,6 @@ public class UserLoginPage extends AppCompatActivity implements  View.OnClickLis
 
                             mPassword.setError(null);
                             Toast.makeText(getApplicationContext(),"Correct",Toast.LENGTH_SHORT).show();
-                           // Intent i = new Intent(UserLoginPage.this,MainActivity.class);
-                           // i.putExtra("userid",UserN);
-                           // startActivity(i);
                             Intent i = new Intent(UserLoginPage.this,MapsActivity.class);
                             i.putExtra("userid",UserN);
                             startActivity(i);
