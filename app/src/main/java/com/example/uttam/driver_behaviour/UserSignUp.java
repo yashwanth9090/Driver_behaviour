@@ -24,7 +24,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Uttam on 11/14/17.
+ * Created by Yashwanth on 11/14/17.
  */
 
 public class UserSignUp extends AppCompatActivity implements  View.OnClickListener{
@@ -95,6 +95,8 @@ public class UserSignUp extends AppCompatActivity implements  View.OnClickListen
             Toast.makeText(this, "Registration Successful", Toast.LENGTH_LONG).show();
         }
     }
+    
+    // check if email is valid
     public boolean validateEmail(String Email)
     {
         String EmailPattern  = "^[A-Za-z][A-Za-z0-9]*([._-]?[A-Za-z0-9]+)@[A-Za-z]+.[A-Za-z]{0,3}$";
