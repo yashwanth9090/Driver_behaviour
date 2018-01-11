@@ -286,9 +286,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 2000, TIME_CONSTANT);
         // analysing behavior every 2 sec
         fuseTimer.scheduleAtFixedRate(new BehaviorAnalysis(), 1000, 2000);
-        // getting the time in the interval of 30 sec
-//        timeElapsed = (System.nanoTime() - start) % 30;
-        //resetting the sensor values every 30 sec
         fuseTimer.scheduleAtFixedRate(new ResetSensorValues(), 1000, 30000);
     }
 
