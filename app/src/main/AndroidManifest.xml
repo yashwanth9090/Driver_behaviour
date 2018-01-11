@@ -32,7 +32,7 @@
         <activity android:name=".SensorFusionActivity"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCAcfy-02UHSu2F6WeQ1rhQhkCr51eBL9g" />
+            android:value="<YOUR_API_KEY>" />
         <activity android:name=".MainMenu"></activity>
         <activity
             android:name=".MapsActivity"
